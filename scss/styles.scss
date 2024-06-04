@@ -11,6 +11,7 @@ $font-stack:"Montserrat", sans-serif;
 html, body {
     font-family: $font-stack;
     scroll-behavior: smooth;
+    background: rgb(116, 204, 167);
 }
 
 .container {
@@ -47,21 +48,35 @@ form {
     .form-control {
         width: 100%;
         display: inline-block;
+        background: rgb(50, 204, 140);
         padding: 1rem;
         border-radius: 3px;
         margin-bottom: 1rem;
+        border: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
     }
-    .button {
+    button {
         background: #000;
-        width: 100%;
+        color: #fff;
+        width: 30%;
     }
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(400px, auto);
-    gap: 30px;
+    gap: 20px;
+}
+
+.grid-box {
+    display: flex;
+
+    align-items: center;
+padding-left: 130px;
+   
+
+    border-radius: 5px;
 }
 
 //mainheader
@@ -99,6 +114,7 @@ form {
 #stories {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 3rem;
     .grid-box {
         background: red;
         width: 300px;
@@ -148,6 +164,40 @@ form {
         background-size: cover;
         background-repeat: no-repeat;
     } 
+}
+
+
+//contact
+#contact {
+    background: rgb(50, 204, 140);
+}
+#contact {
+
+    margin:  0 auto;
+   .contact-row {
+    width: 80%;
+    display: flex;
+    gap: 150px;
+    margin: 0 auto;
+  
+   }
+    h2 {
+        margin: 2rem 0 2rem 0;
+        text-align: center;
+    }
+    form {
+        width: 100%;
+        margin: 0 auto;
+        .form-grid {
+            display: flex;
+            gap: 10px;
+        }
+    }
+    #contact-social {
+        img {
+            width: 50px;
+        }
+    }
 }
 
 //footer

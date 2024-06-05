@@ -8,6 +8,7 @@
   float: none;
   text-align: center;
   margin: 0 auto;
+  font-size: 13px;
 }
 #mainheader .navbar ul li {
   display: inline-block;

@@ -78,13 +78,6 @@ form button {
   gap: 20px;
 }
 
-.grid-box {
-  display: flex;
-  align-items: center;
-  padding-left: 130px;
-  border-radius: 5px;
-}
-
 #mainheader {
   width: 80%;
   margin: 0 auto;
@@ -126,15 +119,15 @@ form button {
   transition: all ease-out 0.5s;
   color: white;
 }
-#stories .box-1 {
+#stories .box-1,
+#stories .box-2,
+#stories .box-3,
+#stories .box-4,
+#stories .box-5,
+#stories .box-6,
+#stories .box-7 {
   text-align: center;
-}
-#stories .grid-box:nth-child(2),
-#stories .grid-box:nth-child(3),
-#stories .grid-box:nth-child(4),
-#stories .grid-box:nth-child(5),
-#stories .grid-box:nth-child(6) {
-  padding-top: 10px;
+  padding: 100px;
 }
 #stories .box-1 {
   background: rgb(165, 212, 99);
@@ -196,7 +189,7 @@ form button {
 }
 .muestra-activo:target h2 {
   color: transparent;
-  background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+  background-image: linear-gradient(to left, #6ff343, #5bbd45, #1a7827, #2ecc71, #FFD700);
   -webkit-background-clip: text;
           background-clip: text;
   animation: color 3s linear infinite;
@@ -237,8 +230,11 @@ form button {
   gap: 10px;
 }
 #contact #contact-form {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+}
+#contact #contact-form button {
+  width: 100%;
 }
 #contact #contact-social img {
   width: 50px;

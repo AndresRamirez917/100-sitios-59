@@ -24,8 +24,21 @@ a {
   color: #000;
 }
 
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #fff;
+}
+
+::target-text {
+  color: violet;
+}
+
 ul {
   list-style: none;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 .btn {
@@ -106,7 +119,6 @@ form button {
   margin-bottom: 3rem;
 }
 #stories .grid-box {
-  width: 300px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 #stories .fa:hover {
@@ -114,9 +126,8 @@ form button {
   transition: all ease-out 0.5s;
   color: white;
 }
-#stories .grid-box:nth-child(1),
-#stories .grid-box:nth-child(7) {
-  padding-top: 50px;
+#stories .box-1 {
+  text-align: center;
 }
 #stories .grid-box:nth-child(2),
 #stories .grid-box:nth-child(3),
@@ -172,6 +183,34 @@ form button {
   background-repeat: no-repeat;
 }
 
+.muestra-activo {
+  display: none;
+}
+
+.muestra-activo:target {
+  display: block;
+  margin: 0 auto;
+  align-items: center !important;
+  align-self: center !important;
+  align-content: center !important;
+}
+.muestra-activo:target h2 {
+  color: transparent;
+  background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: color 3s linear infinite;
+  background-size: 500%;
+}
+
+@keyframes color {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
 #contact {
   background: rgb(50, 204, 140);
 }
@@ -196,6 +235,10 @@ form button {
 #contact form .form-grid {
   display: flex;
   gap: 10px;
+}
+#contact #contact-form {
+  width: 50%;
+  margin: 0 auto;
 }
 #contact #contact-social img {
   width: 50px;

@@ -1,3 +1,34 @@
+//mainheader
+#mainheader {
+    .navbar {
+        .logo {
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 2rem;
+        }
+        ul {
+            text-align: center;
+            margin: 0 auto;
+            li {
+                display: inline-block;
+                margin: 1rem 1rem;
+            }
+        }
+        }
+          //showcase
+    #showcase {
+        h1 {
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
+    }
+    }
+
+  
+
+
+
 //stories
 .grid {
     grid-template-columns: repeat(1, 1fr);
@@ -35,4 +66,24 @@
     grid-row: 7;
 }
 
+}
+
+//contact
+#contact {
+    .contact-row {
+        display: block;
+        .contact-form {
+            form {
+                button {
+                    width: 50%;
+                }
+            }
+          
+        }
+        #contact-social {
+            
+            text-align: center;
+           
+        }
+    }
 }

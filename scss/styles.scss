@@ -146,7 +146,6 @@ form {
  padding: 100px;
 }
 
-
     .box-1 {
        
         background: rgb(165, 212, 99);
@@ -199,6 +198,19 @@ form {
         background-size: cover;
         background-repeat: no-repeat;
     } 
+
+    :nth-child(1),
+    :nth-child(2),
+    :nth-child(3),
+    :nth-child(4),
+    :nth-child(5),
+    :nth-child(6),
+    :nth-child(7){
+        display: block;
+        align-items: center;
+        align-content: center;
+    }
+
 }
 
 //contact animations
